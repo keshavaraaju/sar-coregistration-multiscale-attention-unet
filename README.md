@@ -27,16 +27,6 @@ Traditional methods require prior acquisition info and struggle with noise, deco
 
 Flowchart: See docs/figures/model_flowchart.png (extract from p. 23).
 
-## Installation
-1. Clone the repo: `git clone https://github.com/yourusername/sar-coregistration-multiscale-attention-unet.git`
-2. Install dependencies: `pip install -r requirements.txt`
-3. (Optional) Build Docker: `docker build -t sar-unet .`
-
-## Usage
-- Run main script: `python src/main.py` (loads sample data, trains, evaluates, visualizes).
-- Interactive demo: Open notebooks/thesis_demo.ipynb in Jupyter.
-- Example: Train on your data – replace placeholders in data/sample/.
-
 ## Results Highlights (from Chapter 5, pp. 31-37)
 - Final MAE: Train 0.0033, Val 0.0079 (low error indicates strong generalization).
 - Training time: ~9 hours (20 epochs, 3050s/epoch on AMD Ryzen 9 with 64GB RAM).
