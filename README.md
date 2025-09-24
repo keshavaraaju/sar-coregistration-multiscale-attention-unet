@@ -14,7 +14,7 @@ Key contributions (from Abstract, p. IX):
 
 The model handles high-dimensional SAR data, noise, and complex patterns, achieving sub-pixel accuracy. It represents a cutting-edge solution for SAR geometric correction in scenarios with unknown relative positions (e.g., earthquake studies [12]).
 
-**Note**: This is a reconstruction due to original code/data loss. Demonstrates expertise in DL for remote sensing. For full details, see [thesis.pdf](thesis.pdf).
+**Note**: This is a reconstruction due to original code/data loss. Demonstrates expertise in DL for remote sensing. For full details, see docs/Thesis.pdf
 
 ## Motivation (from Section 1.2, pp. 5-6)
 Traditional methods require prior acquisition info and struggle with noise, decorrelation, large displacements, and computational complexity. Deep learning (e.g., U-Net variants) offers automated, robust alternatives. This work addresses speckle noise, algorithmic inefficiency, and computation by integrating residual learning, multiscale attention, and SE blocks.
