@@ -58,4 +58,4 @@ Data Stats (from Tables 5.1-5.3, pp. 31-32):
 
 For PhD/job applications: This repo demonstrates skills in TensorFlow/Keras, SAR processing, model optimization, and ablation analysis.
 
-Contact: Keshava Raaju Perumal (Matriculation 465017).
+Contact: Keshava Raaju Perumal, keshava.raaju.p@gmail.com
