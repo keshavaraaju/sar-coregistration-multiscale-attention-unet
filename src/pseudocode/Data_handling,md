@@ -1,0 +1,33 @@
+# Data Handling Pipeline (Pseudocode)
+
+Function load_data(path):
+    Load primary_image.npy
+    Load secondary_image.npy
+    Load offset_rg.npy
+    Load offset_az.npy
+    return arrays
+
+Function normalize(image):
+    mean = average(image)
+    std = standard_deviation(image)
+    normalized = (image - min(image)) / (max(image) - min(image))
+    return normalized, mean, std
+
+Function slice_to_patches(image, patch_size, stride):
+    patches = []
+    for i in range(0, image.height, stride):
+        for j in range(0, image.width, stride):
+            patch = crop(image, i, j, patch_size)
+            patches.append(patch)
+    return patches
+
+Function create_batches(pri, sec, rg, az, batch_size):
+    batches = []
+    for each set in (pri, sec, rg, az):
+        batch = group_into_batch(set, batch_size)
+        batches.append(batch)
+    return batches
+
+Function reconstruct_from_patches(patches, shape, patch_size, stride):
+    Merge patches into full_image
+    return reconstructed_image
