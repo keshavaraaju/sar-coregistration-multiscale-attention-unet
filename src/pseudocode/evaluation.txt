@@ -1,0 +1,12 @@
+# Evaluation and Visualization (Pseudocode)
+
+Function evaluate_predictions(pred_rg, pred_az, gt_rg, gt_az):
+    MAE_rg = mean_absolute_error(gt_rg, pred_rg)
+    MAE_az = mean_absolute_error(gt_az, pred_az)
+    RMSE_rg = root_mean_squared_error(gt_rg, pred_rg)
+    RMSE_az = root_mean_squared_error(gt_az, pred_az)
+
+    plot(pred_rg, gt_rg, title="Range Offsets")
+    plot(pred_az, gt_az, title="Azimuth Offsets")
+
+    return MAE_rg, MAE_az, RMSE_rg, RMSE_az
