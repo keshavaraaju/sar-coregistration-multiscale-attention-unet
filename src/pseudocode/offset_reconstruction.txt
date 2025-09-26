@@ -1,0 +1,14 @@
+# Offset Map Reconstruction (Pseudocode)
+
+Function predict_offsets(test_image_pri, test_image_sec, model, patch_size):
+    Initialize full_rg_map = zeros(shape)
+    Initialize full_az_map = zeros(shape)
+
+    patches_pri = divide_into_patches(test_image_pri, patch_size)
+    patches_sec = divide_into_patches(test_image_sec, patch_size)
+
+    for each (patch_pri, patch_sec) at position (i, j):
+        pred_rg, pred_az = model(patch_pri, patch_sec)
+        place pred_rg, pred_az into (i, j) of full_rg_map, full_az_map
+
+    return full_rg_map, full_az_map
