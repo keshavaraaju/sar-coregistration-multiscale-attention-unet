@@ -33,6 +33,14 @@ Flowchart: See docs/figures/model_flowchart.png (extract from p. 23).
 - Ablation studies show Multiscale Attention improves accuracy over baselines (e.g., Simple U-Net MAE higher by ~0.004).
 - Visuals: See docs/figures/ (e.g., comparison_plots.png from p. 33).
 
+  ## Pseudocode Implementations
+This repo reconstructs the algorithms described in the thesis:
+
+- [Data Handling](src/data_handling_pseudocode.md)
+- [Training Pipeline](src/training_pipeline_pseudocode.md)
+- [Offset Reconstruction](src/offset_reconstruction_pseudocode.md)
+- [Evaluation](src/evaluation_pseudocode.md)
+
 Data Stats (from Tables 5.1-5.3, pp. 31-32):
 
 | Metric | Value |
