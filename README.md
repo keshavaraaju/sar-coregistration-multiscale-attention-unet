@@ -36,10 +36,10 @@ Flowchart: See docs/figures/model_flowchart.png (extract from p. 23).
   ## Pseudocode Implementations
 This repo reconstructs the algorithms described in the thesis:
 
-- [Data Handling](src/data_handling.md)
-- [Training Pipeline](src/training_pipeline.md)
-- [Offset Reconstruction](src/offset_reconstruction.md)
-- [Evaluation](src/evaluation.md)
+- [Data Handling](src/pseudocode/data_handling.txt)
+- [Training Pipeline](src/pseudocode/training.txt)
+- [Offset Reconstruction](src/pseudocode/offset_reconstruction.txt)
+- [Evaluation](src/pseudocode/evaluation.txt)
 
 Data Stats (from Tables 5.1-5.3, pp. 31-32):
 
